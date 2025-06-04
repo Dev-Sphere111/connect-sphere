@@ -71,6 +71,7 @@ router.patch('/:id', (req, res) => {
     }
   }
 
+  
   if (req.body.action === 'addComment') {
     try {
       return Post.findByIdAndUpdate(
